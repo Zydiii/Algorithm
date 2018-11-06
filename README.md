@@ -1,0 +1,3 @@
+# README
+
+Practice on algorithm~
