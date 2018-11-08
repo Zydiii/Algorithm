@@ -16,7 +16,7 @@ int MATCHAIN(vector<int> size, int n){
 	for (int d = 1; d <= n - 1; d++) {
 		for (int i = 1; i <= n - d; i++) {
 			int j = i + d;
-			C[i][j] = 2147483647;
+			C[i][j] = numeric_limits<int>::max();
 			for (int k = i + 1; k <= j; k++) {
 				int x = C[i][k - 1] + C[k][j] + size[i - 1] * size[k - 1] * size[j];
 				C[i][j] = C[i][j] < x ? C[i][j] : x;
