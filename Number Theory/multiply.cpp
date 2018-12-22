@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool is_even(int x) {
+bool is_odd(int x) {
 	return x - x / 2 * 2;
 }
 
@@ -9,7 +9,7 @@ int multiply(int x, int y) {
 	if (!y)
 		return 0;
 	int z = multiply(x, y / 2);
-	if (!is_even(y))
+	if (!is_odd(y))
 		return 2*z;
 	return 2*z + x;
 }

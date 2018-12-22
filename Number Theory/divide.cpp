@@ -7,7 +7,7 @@ struct div{
 	int rem;
 };
 
-bool is_even(int x) {
+bool is_odd(int x) {
 	return x - x / 2 * 2;
 }
 
@@ -21,7 +21,7 @@ struct div divide(int x, int y) {
 	d = divide(x / 2, y);
 	d.divide = 2 * d.divide;
 	d.rem = 2 * d.rem;
-	if (is_even(x))
+	if (is_odd(x))
 		d.rem++;
 	if (d.rem >= y) {
 		d.rem -= y;
