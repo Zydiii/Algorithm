@@ -1,3 +1,7 @@
 # README
 
-Practice on algorithm~
+Practice on algorithm.
+
+Just simple implementation.
+
+Wish a good day.
